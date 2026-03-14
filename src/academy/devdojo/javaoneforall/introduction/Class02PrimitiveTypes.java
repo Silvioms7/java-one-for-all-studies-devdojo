@@ -1,0 +1,17 @@
+// 03/13/2026
+package academy.devdojo.javaoneforall.introduction;
+
+public class Class02PrimitiveTypes {
+    static void main(String[] args) {
+        // byte, short, int,  long, double, float, boolean, char.
+        byte age;
+        short salaryJunior;
+        int peoplesSJRP;
+        long client = 999999999999999999l;
+        float number = 99999999999999999999999999999999999999f;
+        double fortuneElon = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999d;
+        boolean trueValue = true;
+        char character = 'J';
+        int ageBoy;
+    }
+}
