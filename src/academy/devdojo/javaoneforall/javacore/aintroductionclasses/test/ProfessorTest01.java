@@ -1,6 +1,6 @@
-package academy.devdojo.javaoneforall.javacore.introductionclasses.test;
+package academy.devdojo.javaoneforall.javacore.aintroductionclasses.test;
 
-import academy.devdojo.javaoneforall.javacore.introductionclasses.domain.Professor;
+import academy.devdojo.javaoneforall.javacore.aintroductionclasses.domain.Professor;
 
 public class ProfessorTest01 {
     static void main(String[] args) {

@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.javacore.introductionclasses.domain;
+package academy.devdojo.javaoneforall.javacore.aintroductionclasses.domain;
 
 public class Car {
     public String name;

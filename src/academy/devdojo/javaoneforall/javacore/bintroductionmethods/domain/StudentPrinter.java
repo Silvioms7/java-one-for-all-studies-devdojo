@@ -1,4 +1,4 @@
-package academy.devdojo.javaoneforall.javacore.introductionmethods.domain;
+package academy.devdojo.javaoneforall.javacore.bintroductionmethods.domain;
 
 public class StudentPrinter {
     public void print (Student student) {

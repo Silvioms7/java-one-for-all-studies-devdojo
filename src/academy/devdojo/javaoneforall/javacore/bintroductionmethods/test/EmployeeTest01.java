@@ -1,6 +1,6 @@
-package academy.devdojo.javaoneforall.javacore.introductionmethods.test;
-import academy.devdojo.javaoneforall.javacore.introductionmethods.domain.EmployeeCalculateAverage;
-import academy.devdojo.javaoneforall.javacore.introductionmethods.domain.Employee;
+package academy.devdojo.javaoneforall.javacore.bintroductionmethods.test;
+import academy.devdojo.javaoneforall.javacore.bintroductionmethods.domain.EmployeeCalculateAverage;
+import academy.devdojo.javaoneforall.javacore.bintroductionmethods.domain.Employee;
 
 
 public class EmployeeTest01 {

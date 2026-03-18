@@ -1,6 +1,6 @@
-package academy.devdojo.javaoneforall.javacore.introductionmethods.test;
+package academy.devdojo.javaoneforall.javacore.bintroductionmethods.test;
 
-import academy.devdojo.javaoneforall.javacore.introductionmethods.domain.Calculator;
+import academy.devdojo.javaoneforall.javacore.bintroductionmethods.domain.Calculator;
 
 public class CalculatorTest01 {
     static void main(String[] args) {
