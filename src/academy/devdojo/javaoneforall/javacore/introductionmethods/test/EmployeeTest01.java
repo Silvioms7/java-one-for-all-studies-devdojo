@@ -7,10 +7,10 @@ public class EmployeeTest01 {
     static void main(String[] args) {
         Employee employee = new Employee();
         EmployeeCalculateAverage employeeCalculateAverage = new EmployeeCalculateAverage();
-        employee.name = "Silvio";
-        employee.age = 18;
-        employee.salaries = new double[] {2340,5400,3455};
+        employee.setName("Silvio");
+        employee.setAge(18);
+        employee.setSalaries(new double[] {2340,5400,3455});
         employee.printer();
-        employeeCalculateAverage.employeeAverage(employee.salaries);
+        employeeCalculateAverage.employeeAverage(employee.getSalaries());
     }
 }

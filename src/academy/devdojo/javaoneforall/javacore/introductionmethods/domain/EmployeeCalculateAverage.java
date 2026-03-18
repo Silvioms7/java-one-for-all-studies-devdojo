@@ -1,5 +1,4 @@
 package academy.devdojo.javaoneforall.javacore.introductionmethods.domain;
-
 public class EmployeeCalculateAverage {
     public void employeeAverage(double... salaries) {
         if (salaries == null) return;
