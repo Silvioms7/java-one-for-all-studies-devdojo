@@ -15,7 +15,7 @@ public class Anime {
         this.status = status;
     }
 
-public Anime(String name, String type, int episodes, String status, String studio) {
+    public Anime(String name, String type, int episodes, String status, String studio) {
        this(name, type, episodes, status);
         this.studio = studio;
     }
