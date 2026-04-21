@@ -1,16 +1,41 @@
 package academy.devdojo.javaoneforall.javacore.xserialization.domain;
 
-import java.io.Serializable;
+import java.io.*;
 
 public class Student implements Serializable {
+    @Serial
+    private static final long serialVersionUID = -8365239599970260686L;
     private long id;
     private String name;
-    private String password;
+    private transient String password;
+    private transient Seminar seminar;
 
     public Student(long id, String name, String password) {
         this.id = id;
         this.name = name;
         this.password = password;
+    }
+
+
+
+    private void writeObject(ObjectOutputStream oos) {
+        try {
+            oos.defaultWriteObject();
+            oos.writeUTF(seminar.getName());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    private void readObject(ObjectInputStream ois) {
+        try {
+            ois.defaultReadObject();
+            String seminarName = ois.readUTF();
+            this.seminar = new Seminar(seminarName);
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -19,6 +44,7 @@ public class Student implements Serializable {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
+                ", seminar='" + seminar + '\'' +
                 '}';
     }
 
@@ -44,5 +70,13 @@ public class Student implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Seminar getSeminar() {
+        return seminar;
+    }
+
+    public void setSeminar(Seminar seminar) {
+        this.seminar = seminar;
     }
 }

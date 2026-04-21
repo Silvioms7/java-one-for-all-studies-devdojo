@@ -1,5 +1,6 @@
 package academy.devdojo.javaoneforall.javacore.xserialization.test;
 
+import academy.devdojo.javaoneforall.javacore.xserialization.domain.Seminar;
 import academy.devdojo.javaoneforall.javacore.xserialization.domain.Student;
 
 import java.io.IOException;
@@ -12,7 +13,9 @@ import java.nio.file.Paths;
 public class SerializationTest01 {
     static void main(String[] args) {
         Student student = new Student(1L, "Silvio", "1234");
-//        serialize(student);
+        Seminar seminar = new Seminar("Seminar DevDojo");
+        student.setSeminar(seminar);
+        serialize(student);
         deserialize();
     }
 
